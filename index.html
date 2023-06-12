@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+/>
 </head>
 <body>
     <div id="page" class="page-home">
@@ -206,9 +210,9 @@
         </header>
         <main>
             <div class="slider">
-                <div class="sliderbox">
-                    <div class="wrap">
-                        <div class="item">
+                <div class="sliderbox swiper">
+                    <div class="wrap swiper-wrapper">
+                        <div class="item swiper-slide">
                             <div class="image">
                                 <div class="ob-cover">
                                     <img src="assets/slider_01.jpg" alt="">
@@ -224,6 +228,668 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="item swiper-slide">
+                            <div class="image">
+                                <div class="ob-cover">
+                                    <img src="assets/slider_02.jpg" alt="">
+                                </div>
+                                <div class="title-info">
+                                    <div class="container wide">
+                                        <div class="wrap">
+                                            <span class="price">$39</span>
+                                            <h3 class="title">Lo mejor en ropa masculina</h3>
+                                            <div class="button"><a href="" class="primary-btn">Shop Now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item swiper-slide">
+                            <div class="image">
+                                <div class="ob-cover">
+                                    <img src="assets/slider_03.jpg" alt="">
+                                </div>
+                                <div class="title-info">
+                                    <div class="container wide">
+                                        <div class="wrap">
+                                            <span class="price">$39</span>
+                                            <h3 class="title">Lo mejor en ropa masculina</h3>
+                                            <div class="button"><a href="" class="primary-btn">Shop Now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="custom-pagination">
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <!---slider-->
+
+            <div class="guide">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="heading">
+                            <h2 class="title">Products Guide</h2>
+                        </div>
+                        <div class="dotgrid scrollto">
+                            <div class="wrapper">
+                                <div class="item">
+                                    <div class="dot-image">
+                                        <div class="thumbnail hover">
+                                            <img src="assets/guide_01.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="dot-info">
+                                        <h3 class="dot-title">The blue ocean mx</h3>
+                                        <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum blanditiis numquam?</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="dot-image">
+                                        <div class="thumbnail hover">
+                                            <a href="">
+                                                <img src="assets/guide_02.png" alt="">
+                                            </a> 
+                                        </div>
+                                    </div>
+                                    <div class="dot-info">
+                                        <h3 class="dot-title">The Great Sweater</h3>
+                                        <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum blanditiis numquam?</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="dot-image">
+                                        <div class="thumbnail hover">
+                                            <a href=""><img src="assets/guide_03.png" alt=""></a>
+                                        </div>
+                                    </div>
+                                    <div class="dot-info">
+                                        <h3 class="dot-title">The blue ocean mx</h3>
+                                        <p class="grey-color">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptatum blanditiis numquam?</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!---guide-->
+
+
+            <div class="carousel">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="heading">
+                            <h2 class="title">Nuevos Productos</h2>
+                        </div>
+                        <div class="inner-wrapper">
+                            <div class="dotgrid carouselbox swiper">
+                                <!-- copy from megea menu structure-->
+                                
+                                <div class="wrapper swiper-wrapper">
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_01.jpg" alt="">
+                                            </div>
+                                            <div class="thumbnail hover">
+                                                <img src="assets/product_01b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">S/.60.00</span>
+                                                <span class="current">S/.45.00</span>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_02.jpg" alt="">
+                                            </div>
+                                            <div class="thumbnail hover">
+                                                <img src="assets/product_02b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">Sweatshirt Luxo</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">S/.120.00</span>
+                                                <span class="current">S/.90.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_03.jpg" alt="">
+                                            </div>
+                                            <div class="thumbnail hover">
+                                                <img src="assets/product_03b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">Jogger Luxo</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">S/.90.00</span>
+                                                <span class="current">S/.67.00</span>
+                                            </div>
+                                        </div>
+                                    </div>                                   
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_01.jpg" alt="">
+                                            </div>
+                                            <div class="thumbnail hover">
+                                                <img src="assets/product_01b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">S/.60.00</span>
+                                                <span class="current">S/.45.00</span>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_02.jpg" alt="">
+                                            </div>
+                                            <div class="thumbnail hover">
+                                                <img src="assets/product_02b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">Sweatshirt Luxo</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">S/.120.00</span>
+                                                <span class="current">S/.90.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item swiper-slide">
+                                        <div class="dot-image">
+                                            <a href="" class="product-permalink"></a>
+                                            <div class="thumbnail">
+                                                <img src="assets/product_03.jpg" alt="">
+                                            </div>
+                                            <div class="thumbnail hover">
+                                                <img src="assets/product_03b.jpg" alt="">
+                                            </div>
+                                            <div class="actions">
+                                                <ul>
+                                                    <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                    <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="label"><span>-25%</span></div>
+                                        </div>
+                                        <div class="dot-info">
+                                            <h2 class="dot-title"><a href="">Jogger Luxo</a></h2>
+                                            <div class="product-price">
+                                                <span class="before">S/.90.00</span>
+                                                <span class="current">S/.67.00</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="nav">
+                                <div class="swiper-button-next">
+                                    <i class="ri-arrow-right-line"></i>
+                                </div>
+                                <div class="swiper-button-prev">
+                                    <i class="ri-arrow-left-line"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- carousel -->
+
+            <div class="bycats">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="heading sort-list tabs">
+                            <span class="grey-color">in</span>
+                            <div class="wrap">
+                                <h3 class="opt-trigger">
+                                    <span class="value">Sweater</span>
+                                    <i class="ri-arrow-down-s-line"></i>
+                                </h3>
+                                <ul>
+                                    <li class="active"><a data-id="sweater" href="#0" class="tabbed-trigger">Sweater</a></li>
+                                    <li><a data-id="hoodie" href="#0" class="tabbed-trigger">Hoodie</a></li>
+                                    <li><a data-id="shirt" href="#0" class="tabbed-trigger">Shirt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabbed">
+                            <div id="sweater" class="sort-data active">
+                                <div class="dotgrid">
+                                    <div class="wrapper">
+                                        <!-- copy .item from carousel -->
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_02.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_02b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_03.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_03b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_04.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_04b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_05.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_05b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_06.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_06b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>                                                                                                                          
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="hoodie" class="sort-data">
+                                <div class="dotgrid">
+                                    <div class="wrapper">
+                                        <!-- copy .item from carousel -->                                         
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_04.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_04b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_05.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_05b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_06.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_06b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>       
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_07.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_07b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>                                                                                                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="shirt" class="sort-data">
+                                <div class="dotgrid">
+                                    <div class="wrapper">
+                                        <!-- copy .item from carousel -->
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_02.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_02b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_03.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_03b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div> 
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_05.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_05b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>   
+                                        <div class="item">
+                                            <div class="dot-image">
+                                                <a href="#" class="product-permalink"></a>
+                                                <div class="thumbnail">
+                                                    <img src="assets/product_08.jpg" alt="">
+                                                </div>
+                                                <div class="thumbnail hover">
+                                                    <img src="assets/product_08b.jpg" alt="">
+                                                </div>
+                                                <div class="actions">
+                                                    <ul>
+                                                        <li><a href=""><i class="ri-star-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-arrow-left-right-line"></i></a></li>
+                                                        <li><a href=""><i class="ri-eye-line"></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="label"><span>-25%</span></div>
+                                            </div>
+                                            <div class="dot-info">
+                                                <h2 class="dot-title"><a href="">T-Shirt Luxo</a></h2>
+                                                <div class="product-price">
+                                                    <span class="before">S/.60.00</span>
+                                                    <span class="current">S/.45.00</span>
+                                                </div>
+                                            </div>
+                                        </div>                                                                                                                          
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                           
+                    </div>
+                </div>
+            </div>
+            <!-- tabbed -->
+
+            <div class="guide">
+                <div class="container">
+                    <div class="wrap">
+
                     </div>
                 </div>
             </div>
@@ -277,6 +943,7 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

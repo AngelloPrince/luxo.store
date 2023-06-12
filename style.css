@@ -15,8 +15,8 @@
     --fw600: 600;
 
     --transition-color: color .3s;
-    ---transition-background: background-color .3s;
-    --transitio-border: border .3s;
+    --transition-background: background-color .3s;
+    --transition-border: border .3s;
     --transition-transform: transform .3s;
 
     --shadow: 0px 10px 20px 0px rgb(0 0 0 / 20%);
@@ -102,9 +102,9 @@ h4 {font-size: 1em}
     line-height: 42px;
     border-width: 2px;
     border-style: solid;
-    transition: var(---transition-background),
+    transition: var(--transition-background),
                 var(--transition-color),
-                var(--transitio-border);
+                var(--transition-border);
 }
 .primary-btn, .secondary-btn{
     border-color: var(--dark-color);
@@ -124,7 +124,9 @@ h4 {font-size: 1em}
     font-size: clamp(30px, -0.875em + 8.333vw, var(--fs-max, 40px));
 }
 
-
+.grey-color {
+    color: var(--grey-color);
+}
 
 
 
@@ -208,6 +210,8 @@ h4 {font-size: 1em}
     pointer-events: all;
 }
 .scrollto > .wrapper {
+    --display: flex;
+    padding-bottom: 20px;
     overflow-x: auto;
     overscroll-behavior-inline: contain;
     scroll-snap-type: inline mandatory;
@@ -363,7 +367,7 @@ h4 {font-size: 1em}
     height: 42px;
     background-color: var(--white-color);
     border-radius: 50%;
-    transition: var(---transition-background), var(--transition-color);
+    transition: var(--transition-background), var(--transition-color);
    }
    .dotgrid .actions ul li a:hover{
     background-color: var(--dark-color);
@@ -504,7 +508,7 @@ form.search :where(i:last-child){
     top: 50%;
     transform: translateY(-50%);
     border-radius: 50%;
-    transition: var(---transition-background);
+    transition: var(--transition-background);
     z-index: 1;
 }
 .mobile-menu .child-trigger:hover {
@@ -572,6 +576,189 @@ form.search :where(i:last-child){
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+}
+
+.slider .custom-pagination {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    bottom: 50%;
+}
+
+.slider .custom-pagination .swiper-pagination {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.custom-pagination .swiper-pagination-bullet {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    opacity: 1;
+    background-color: transparent;
+}
+.custom-pagination .swiper-pagination-bullet::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    background-color: var(--dark-color);
+    border: 1px solid var(--dark-color);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width .2s, height .2s, transform .2s;
+}
+.custom-pagination .swiper-pagination-bullet-active::before {
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+}
+.slider .title-info :where(span, h3, .button) {
+    transform: translateY(30px);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .75s, opacity .75s, visibility .75s;
+}
+.slider .swiper-slide-active .title-info :where(span, h3, .button) {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+.slider .swiper-slide-active .title-info h3 {
+    transition-delay: .5s;
+}
+.slider .swiper-slide-active .title-info .button {
+    transition-delay: .75s;
+}
+
+/*-------------GUIA----------------*/
+.page-home main > div:not(.slider) {
+    padding: 100px 0;
+}
+.guide {
+    background-color: var(--flashwhite-color);
+}
+main > div .heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+.guide .dotgrid .wrapper {
+    --grid-col: 260px;
+}
+
+ :is(.guide) .dot-image .thumbnail {
+    position: relative;
+    opacity: unset;
+}
+.guide .dot-image .thumbnail img{
+    width: 100%;
+}
+.guide .dot-title {
+    --fs14: 18px;
+    --fw600: 400;
+    padding: 10px 0;
+}
+.guide .dot-info p {
+    line-height: 1.4;
+}
+.guide .wrapper .item {
+    width: 290px;
+    scroll-snap-align: start;
+    flex-shrink: 0;
+}
+.guide .scrollto .wrapper::-webkit-scrollbar-thumb {
+    --border-color: #f0f9f8;
+}
+
+/*--------CARROUSEL---------*/
+.carousel .inner-wrapper {
+    position: relative;
+}
+.carousel .dotgrid .wrapper {
+    display: flex;
+    grid-template-columns: unset;
+    gap: unset;
+}
+.carousel .nav > div::after {
+    content: none;
+}
+.carousel .nav > div {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--grey-color);
+    border-radius: 50%;
+    color: var(--dark-color);
+    font-size: 20px;
+    -webkit-tap-highlight-color: transparent;
+    transition: var(--transition-background),
+                var(--transition-color)
+                var(--transition-border);
+}
+.carousel .nav > div:hover {
+    color: var(--white-color);
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+.carousel .nav .swiper-button-disabled {
+    opacity: 0;
+}
+
+/* bycats */
+
+.bycats .heading {
+    display: flex;
+    justify-content: center;
+}
+.bycats .heading > span {
+    font-family: var(--second-font);
+    font-size: 32px;
+    margin-right: 20px;
+}
+.bycats .heading > span,
+.opt-trigger{
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    -webkit-tap-highlight-color: transparent;
+    cursor: pointer;
+}
+.sort-list .wrap {
+    position: relative;
+}
+.sort-list .wrap ul {
+    position: absolute;
+    text-align: left;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    z-index: 10;
+    display: none;
+    animation: var(--fade);
+}
+.sort-list .wrap ul.show{
+    display: block;
+}
+.sort-list ul li a {
+    display: block;
+    padding: 5px 20px;
+    transition: var(--transition-background), var(--transition-color);
+}
+.sort-list ul li a:hover,
+.sort-list ul li.active a{
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+.sort-data{
+    display: none;
+}
+.sort-data.active{
+    display: block;
 }
 
 
@@ -648,6 +835,11 @@ form.search :where(i:last-child){
         border-color: var(--dark-color);
     }
 }
+@media(min-width: 480px){
+    .carousel .dotgrid .item {
+        width: 270px;
+    }
+}
 
 @media(min-width: 1200px){
     .container.wide {
@@ -655,8 +847,20 @@ form.search :where(i:last-child){
         --gutter: 40px;
     }
 }
+
 @media (min-width: 1400px){
     .mega-content{
         grid-template-columns: 1fr 1fr;
+    }
+    .carousel .inner-wrapper {
+        max-width: 1250px;
+        margin: 0 auto;
+        padding: 0 40px;
+    }
+    .carousel .nav > .swiper-button-next {
+        right: -40px;
+    }
+    .carousel .nav > .swiper-button-prev {
+        left: -40px;
     }
 }
