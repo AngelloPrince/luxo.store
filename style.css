@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Prata&display=swap');
 
 :root {
-    --primary-color : #3a3131;
+    --primary-color : #00ffd5;
     --light-color : #d1d8e0;
     --grey-color : #687080;
     --red-color : #ff4757;
@@ -44,6 +44,7 @@ body{
     line-height: 1.8;
     color: var(--dark-color);
     background-color: var(--white-color);
+    
 }
 a{
     text-decoration: none;
@@ -240,7 +241,17 @@ h4 {font-size: 1em}
 
 .inner-header{
     line-height: 80px;
-    background:  linear-gradient(220.55deg, #FF896D 0%, #D02020 100%);
+                    /* ROJO OSCURO DEGRADE */
+    /* background: linear-gradient(90deg, rgba(30,81,180,1) 11%, rgba(121,9,9,1) 34%, rgba(163,0,0,1) 51%, rgba(112,8,8,1) 72%, rgba(64,35,35,1) 100%); */
+
+                     /* ROJO CLARO DEGRADE */
+    /* background: linear-gradient(90deg, rgba(53,116,237,1) 12%, rgba(195,18,18,1) 34%, rgba(231,0,0,1) 51%, rgba(212,16,16,1) 72%, rgba(138,60,60,1) 100%); */
+
+                    /* ROJO CLARO */
+    /* background: linear-gradient(220.55deg, #FF896D 0%, #D02020 100%); */
+                   
+                    /* SEASHELL */
+    background-color: #FFF5EE;
 }
 .inner-header :where(.wrap, .menu > ul),
 .list-inline > ul{
