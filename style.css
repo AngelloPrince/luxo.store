@@ -515,7 +515,6 @@ form :where(input, textarea, select)::placeholder{
 
 
 
-
 .inner-header .search .input{
     display: flex;
     border: 0;
@@ -1148,6 +1147,7 @@ main > div .heading {
 .summary .product-color button.tosca {background-color: #a9cdcc;}
 .summary .product-color button.brown {background-color: #966548;}
 .summary .product-color button.ocean {background-color: #81b8cc;}
+.summary .product-color button.white {background-color: #f0f9f8;}
 
 .summary .product-color button.selected,
 .summary .product-color button:hover:not(.selected) {
