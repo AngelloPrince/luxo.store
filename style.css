@@ -1152,10 +1152,14 @@ main > div .heading {
 .summary .product-color button {
     border-radius: 50%;
 }
+/* COLORES DE BOTON ESCOGE */
 .summary .product-color button.tosca {background-color: #a9cdcc;}
 .summary .product-color button.brown {background-color: #966548;}
 .summary .product-color button.ocean {background-color: #81b8cc;}
 .summary .product-color button.white {background-color: #f0f9f8;}
+.summary .product-color button.black {background-color: #000000;}
+.summary .product-color button.gris {background-color: #808080;}
+.summary .product-color button.beige {background-color: #F5f5dc;}
 
 .summary .product-color button.selected,
 .summary .product-color button:hover:not(.selected) {
