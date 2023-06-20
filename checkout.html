@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="./css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>   
-    <title>Chekout | Luxo Store</title>
+    <title>Checkout | Luxo Store</title>
 </head>
 <body>
-    <div id="page" class="page-cart">
+    <div id="page" class="page-checkout">
         <!-- TODO EL ENCABEZADO -->
         <header>
             <!-- CONTENEDOR DEL HEADER -->
@@ -213,7 +213,7 @@
                             <!-- CONTENEDOR DEL PRODUCTO DETALLADO -->
                             <ul>
                                 <li><a href="./index.html">Home</a></li>
-                                <li><span>Cart</span></li>
+                                <li><span>Checkout</span></li>
                             </ul>
                         </div>
                     </div>
@@ -238,158 +238,208 @@
                 <div class="container wide">
                     <div class="wrap">
                         <div class="heading">
-                            <h1 class="title">Cart</h1>
+                            <h1 class="title">Checkout</h1>
                         </div>
                         <div class="content">
-                            <div class="cart-table">
-                                <div class="product-list has-bg">
-                                    <div class="table-title">
-                                        <ul>
-                                            <li class="dotgrid">
-                                                <div class="grouping wrapper">
-                                                    <span></span>
-                                                    <span>Product</span>
-                                                </div>
-                                                <div class="grouping wrapper">
-                                                    <span>Price</span>
-                                                    <span>Qty</span>
-                                                    <span>Total</span>
-                                                    <span></span>
-                                                </div>
-                                            </li>
-                                        </ul>
+                            <div class="checkout-address">
+                                <h2>Detalles de facturación</h2>
+                                <form action="">
+                                    <div class="dotgrid">
+                                        <div class="wrapper">
+                                            <div>
+                                                <label>Nombres *</label>
+                                                <input type="text" placeholder="Nombres">
+                                            </div>
+                                            <div>
+                                                <label>Apellidos *</label>
+                                                <input type="text" placeholder="Apellidos">
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="table-content">
-                                        <ul>
-                                            <li class="dotgrid">
-                                                <div class="grouping wrapper">
-                                                    <!-- copiando estructura del floating cart -->
-                                                    <div class="thumbnail ob-cover">
-                                                        <a href="">
-                                                            <img src="assets/products/polera_01a.jpeg" alt="">
-                                                        </a>
+                                    <div>                                       
+                                        <div>
+                                            <label>Company name</label>
+                                            <input type="text" placeholder="Company name">
+                                        </div>
+                                        <div>
+                                            <label for="country">Pais / Ciudad *</label>
+                                            <select name="country" id="country">
+                                                <option value=""></option>
+                                                <option value="1">Lima</option>
+                                                <option value="2">Callao</option>
+                                                <option value="3">Comas</option>
+                                                <option value="4">Centro</option>
+                                                <option value="5">La victoria</option>
+                                            </select>
+                                        </div>                                       
+                                        <div>
+                                            <label>Street address *</label>
+                                            <input type="text" placeholder="Street address">
+                                            <input type="text" placeholder="Apartment, suite etc. (optional)">
+                                        </div>
+                                        <div>
+                                            <label>Town City *</label>
+                                            <input type="text" placeholder="Town City">
+                                        </div>
+                                        <div>
+                                            <label>Stadte *</label>
+                                            <input type="text" placeholder="State">
+                                        </div>
+                                        <div>
+                                            <label>Zip Code *</label>
+                                            <input type="text" placeholder="Zip code">
+                                        </div>
+                                        <div class="dotgrid">
+                                            <div class="wrapper">
+                                                <div>
+                                                    <label>Phone *</label>
+                                                    <input type="tel" placeholder="Phone">
+                                                </div>
+                                                <div>
+                                                    <label>Email address *</label>
+                                                    <input type="text" placeholder="Email address">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <label class="check-option">
+                                        <input type="checkbox" class="checker">
+                                        <span>Create an account?</span>
+                                    </label>
+                                </form>
+                            </div>
+                            <div class="checkout-products has-bg">
+                                <div class="order-summary">
+                                    <div class="wrapper">
+                                        <h2>Order Summary</h2>
+                                        <div class="product-list">
+                                            <ul>
+                                                <li>
+                                                    <div class="grouping">
+                                                        <div class="thumbnail ob-cover">
+                                                            <span class="item-floating">x1</span>
+                                                            <img src="./assets/products/jogger_01a.jpeg" alt="">
+                                                        </div>
                                                     </div>
                                                     <div class="variats">
-                                                        <h4 class="dot-title"><a href="">Sweatshirt Luxo</a></h4>
+                                                        <h4 class="dot-title"><a href="">The Sweater in Tosca</a></h4>
                                                         <div class="color grey-color">
                                                             <span>Color:</span>
-                                                            <span>Blanco</span>
+                                                            <span>Negro</span>
                                                         </div>
                                                         <div class="size grey-color">
                                                             <span>Talla:</span>
                                                             <span>L</span>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="grouping wrapper">
-                                                    <div class="price">S/90.00</div>
-                                                    <div class="quantity">
-                                                        <div class="control">
-                                                            <button>-</button>
-                                                            <input type="text" value="1">
-                                                            <button>+</button>
+                                                        <div class="price-item">
+                                                            <span>S/90.00</span>
                                                         </div>
                                                     </div>
-                                                    <div class="price-sub">S/90.00</div>
-                                                    <a href="" class="item-remove">
-                                                        <i class="ri-close-line"></i>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="dotgrid">
-                                                <div class="grouping wrapper">
-                                                    <!-- copiando estructura del floating cart -->
-                                                    <div class="thumbnail ob-cover">
-                                                        <a href="">
-                                                            <img src="assets/products/polera_01a.jpeg" alt="">
-                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <div class="grouping">
+                                                        <div class="thumbnail ob-cover">
+                                                            <span class="item-floating">x1</span>
+                                                            <img src="./assets/products/jogger_01a.jpeg" alt="">
+                                                        </div>
                                                     </div>
                                                     <div class="variats">
-                                                        <h4 class="dot-title"><a href="">Sweatshirt Luxo</a></h4>
+                                                        <h4 class="dot-title"><a href="">The Sweater in Tosca</a></h4>
                                                         <div class="color grey-color">
                                                             <span>Color:</span>
-                                                            <span>Blanco</span>
+                                                            <span>Negro</span>
                                                         </div>
                                                         <div class="size grey-color">
                                                             <span>Talla:</span>
                                                             <span>L</span>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="grouping wrapper">
-                                                    <div class="price">S/90.00</div>
-                                                    <div class="quantity">
-                                                        <div class="control">
-                                                            <button>-</button>
-                                                            <input type="text" value="1">
-                                                            <button>+</button>
+                                                        <div class="price-item">
+                                                            <span>S/90.00</span>
                                                         </div>
                                                     </div>
-                                                    <div class="price-sub">S/90.00</div>
-                                                    <a href="" class="item-remove">
-                                                        <i class="ri-close-line"></i>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                            <li class="dotgrid">
-                                                <div class="grouping wrapper">
-                                                    <!-- copiando estructura del floating cart -->
-                                                    <div class="thumbnail ob-cover">
-                                                        <a href="">
-                                                            <img src="assets/products/polera_01a.jpeg" alt="">
-                                                        </a>
+                                                </li>
+                                                <li>
+                                                    <div class="grouping">
+                                                        <div class="thumbnail ob-cover">
+                                                            <span class="item-floating">x1</span>
+                                                            <img src="./assets/products/jogger_01a.jpeg" alt="">
+                                                        </div>
                                                     </div>
                                                     <div class="variats">
-                                                        <h4 class="dot-title"><a href="">Sweatshirt Luxo</a></h4>
+                                                        <h4 class="dot-title"><a href="">The Sweater in Tosca</a></h4>
                                                         <div class="color grey-color">
                                                             <span>Color:</span>
-                                                            <span>Blanco</span>
+                                                            <span>Negro</span>
                                                         </div>
                                                         <div class="size grey-color">
                                                             <span>Talla:</span>
                                                             <span>L</span>
                                                         </div>
-                                                    </div>
-                                                </div>
-                                                <div class="grouping wrapper">
-                                                    <div class="price">S/90.00</div>
-                                                    <div class="quantity">
-                                                        <div class="control">
-                                                            <button>-</button>
-                                                            <input type="text" value="1">
-                                                            <button>+</button>
+                                                        <div class="price-item">
+                                                            <span>S/90.00</span>
                                                         </div>
                                                     </div>
-                                                    <div class="price-sub">S/90.00</div>
-                                                    <a href="" class="item-remove">
-                                                        <i class="ri-close-line"></i>
-                                                    </a>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="cart-total">
-                                <div class="product-list has-bg">
-                                    <div class="table-content">
-                                        <div class="grouping">
-                                            <div class="add-note">
-                                                <textarea rows="3" placeholder="Additional note +"></textarea>
-                                            </div>
-                                            <div class="sub-total">
-                                                <div class="sub-pricing">
+                                <div class="total-summary has-bg">
+                                    <div class="wrapper cart-footer">
+                                        <div class="payment-options list-inline">
+                                            <span>Select payment</span>
+                                            <ul>
+                                                <li>
+                                                    <input type="radio" name="pay-option" id="cc">
+                                                    <label for="cc"><i class="ri-bank-card-line"></i></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="pay-option" id="pp">
+                                                    <label for="pp"><i class="ri-paypal-line"></i></label>
+                                                </li>
+                                                <li>
+                                                    <input type="radio" name="pay-option" id="cod">
+                                                    <label for="cod"><i class="ri-hand-coin-line"></i></label>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="discount">
+                                            <form action="">
+                                                <input type="text" class="input" placeholder="Cupón">
+                                                <input type="submit" class="submit" value="Aplicar">
+                                            </form>
+                                        </div>
+                                        <div class="math-pricing">
+                                            <ul>
+                                                <li>
                                                     <span>Subtotal</span>
-                                                    <span class="sub-total-price">S/270.00</span>
-                                                </div>
-                                                <div class="sub-terms">
-                                                    <input type="checkbox" class="checker" id="terms">
-                                                    <label for="terms">I agree to <a href="" class="grey-link">Terminos y Condiciones</a></label>
-                                                </div>
-                                                <div class="button">
-                                                    <a href="" class="secondary-btn">Checkout</a>
-                                                </div>
-                                            </div>
+                                                    <span class="value">S/270.00</span>
+                                                </li>
+                                                <li>
+                                                    <ul>
+                                                        <li><span>Delivery</span></li>
+                                                        <li>
+                                                            <div>
+                                                                <input type="radio" class="checker">
+                                                                <label>Free</label>
+                                                            </div>
+                                                            <span class="value"> S/0.00</span>
+                                                        </li>
+                                                    </ul>
+                                                </li>                                              
+                                                <li>
+                                                    <span>Promo descuento</span>
+                                                    <span class="value">-</span>
+                                                </li>
+                                                
+                                                <li class="total">
+                                                    <span>Total</span>
+                                                    <span class="value">S/270.00</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="button">
+                                            <a href="" class="secondary-btn">Hacer Pedido</a>
                                         </div>
                                     </div>
                                 </div>
@@ -755,6 +805,21 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="data-mobile-nav" class="mobile-nav">
+        <div class="wrap">
+            <a href="#0"><i class="ri-home-4-line"></i></a>
+            <a href="#0"><i class="ri-user-line"></i></a>
+            <a href="#0">
+                <i class="ri-star-line"></i>
+                <span class="item-floating">7</span>
+            </a>
+            <a href="#0" trigger-button data-target="data-cart">
+                <i class="ri-shopping-bag-line"></i>
+                <span class="item-floating">3</span>
+            </a>
+            <a href="#0"><i class="ri-arrow-up-line"></i></a>
         </div>
     </div>
     
