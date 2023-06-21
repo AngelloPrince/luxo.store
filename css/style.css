@@ -1687,7 +1687,7 @@ main > div .heading {
 }
 .cart-footer .button .secondary-btn,
 .cart-total .button a.secondary-btn {
-    background-color: var(--primary-color);
+    background-color: #02d934;
     border: 0;
     text-transform: capitalize;
     line-height: 54px;
@@ -1986,6 +1986,7 @@ input[type="range"]::-webkit-slider-thumb {
     text-transform: capitalize;
 }
 
+    
 
 /* CHECKOUT PAGE */
 .checkout-products{
