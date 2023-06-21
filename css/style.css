@@ -1246,10 +1246,12 @@ main > div .heading {
     padding: 0;
 }
 .summary .product-action .addcart button {
-    background-color: var(--white-color);
+    background-color: var(--dark-color);
+    color: var(--flashwhite-color);
 }
 .summary .product-action .addcart button:hover {
-    background-color: var(--dark-color);
+    background-color: var(--flashwhite-color);
+    color: var(--dark-color);
 }
 
 .summary .product-control ul {
@@ -1985,7 +1987,9 @@ input[type="range"]::-webkit-slider-thumb {
     font-weight: initial;
     text-transform: capitalize;
 }
+.addcart{
 
+}
     
 
 /* CHECKOUT PAGE */
