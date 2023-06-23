@@ -141,3 +141,5 @@ const thumbImage = new Swiper('.thumbnail-image', {
     },
 
   })
+;
+

@@ -2230,6 +2230,9 @@ input[type="range"]::-webkit-slider-thumb {
     .inner-footer .bottom{
         padding-bottom: 0;
     }
+    #banner {
+        background-attachment: fixed;
+      }
 }
 
 
@@ -2337,11 +2340,11 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 
-
 @media(min-width: 480px){
     .carousel .dotgrid .item {
         width: 270px;
     }
+
 }
 
 @media(min-width: 1200px){
@@ -2349,6 +2352,8 @@ input[type="range"]::-webkit-slider-thumb {
         --mx-width: 1720px;
         --gutter: 40px;
     }
+
+
 }
 
 @media (min-width: 1400px){
@@ -2386,4 +2391,16 @@ input[type="range"]::-webkit-slider-thumb {
     margin-top: 15%;
     align-content: center;
     text-align: center;
+}
+
+@media (max-width: 425px) {
+    #banner {
+        background-attachment:unset;
+
+      }
+}
+
+
+#mensajeoculto{
+    display: none;
 }
