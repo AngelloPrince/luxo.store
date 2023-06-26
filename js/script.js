@@ -143,3 +143,16 @@ const thumbImage = new Swiper('.thumbnail-image', {
   })
 ;
 
+// AUDIO DE FONDO
+var audio = document.getElementById("audio-fondo");
+audio.volume = 0.1;
+
+// Verificar si hay datos almacenados en localStorage
+if (localStorage.getItem("audioTime")) {
+  audio.currentTime = localStorage.getItem("audioTime");
+}
+
+// Guardar el tiempo actual del audio en localStorage cuando cambia
+window.addEventListener("beforeunload", function() {
+  localStorage.setItem("audioTime", audio.currentTime);
+});

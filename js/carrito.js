@@ -46,3 +46,25 @@ function actualizarTotalCarrito(){
     total = Math.round(total*100)/100;
     document.getElementsByClassName('carrito-precio-total')[0].innerText = total;
 }
+
+
+
+
+
+
+
+
+
+
+// LOCAL STORAGE
+var carts = document.getElementById("data-cart");
+
+// Verificar si hay datos almacenados en localStorage
+if (localStorage.getItem("cartsTime")) {
+  carts.currentTime = localStorage.getItem("cartsTime");
+}
+
+// Guardar el tiempo actual del audio en localStorage cuando cambia
+window.addEventListener("beforeunload", function() {
+  localStorage.setItem("cartsTime", carts.currentTime);
+});
