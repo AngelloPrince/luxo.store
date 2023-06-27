@@ -792,12 +792,12 @@
             <div class="data-content">
                 <a href="#0" class="close-trigger" close-button><i class="ri-close-line"></i></a>
                 <h3>Pregúntanos</h3>
-                <form action="">
-                    <div><input type="text" placeholder="Nombre"></div>
-                    <div><input type="text" placeholder="Email"></div>
-                    <div><textarea placeholder="Tu pregunta es.." cols="30" rows="5"></textarea></div>
+                <form action="https://formspree.io/f/mzblppjd" method="POST">
+                    <div><input name="nombre" type="text" placeholder="Nombre"></div>
+                    <div><input name="correo" type="text" placeholder="Email"></div>
+                    <div><textarea name="pregunta" placeholder="Tu pregunta es.." cols="30" rows="5"></textarea></div>
                     <div class="button">
-                        <button type="submit" class="secondary-btn">Enviar</button>
+                        <button name="enviar" type="submit" class="secondary-btn">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -833,7 +833,7 @@
                     </div>
                     
                     <div><input name="titulo de comentario" type="text" placeholder="Título"></div>
-                    <div><textarea name="comentario" placeholder="Tu comentario es..." cols="30" rows="5"></textarea></div>
+                    <div><textarea name="comentario jogger1" placeholder="Tu comentario es..." cols="30" rows="5"></textarea></div>
                     <div class="button">
                         <button name="enviar" type="submit" class="secondary-btn">Comentar</button>
                     </div>
